@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container.navy{
+    width:200px;
+    height:100vh;
+    background-color: rgb(29, 29, 94);
+    color:#fff;
+    text-align: left;   
+}
+
+.container.white{
+    width:200px;
+    height:100vh;
+    background-color: #fff;
+    color:#222;
+    text-align: left;
+    border-right: 1px solid lightgray;   
+}
+
+.container.dark{
+    width:200px;
+    height:100vh;
+    background-color: rgb(19, 19, 19);
+    color:rgb(230, 230, 230);
+    text-align: left;
+}
+
+
+.logo{
+    display: block;
+    padding-top:20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.logo span{
+    margin-left: 5px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    /* margin-top: 40px; */
+    cursor: pointer;
+}
+
+
+.list-item{
+    list-style: none;
+    margin-bottom: 25px;
+    padding:10px;
+}
+
+.list-item:hover{
+    border-radius: 50px;
+    background-color: rgb(71, 71, 71);
+}
+
+.list-item i{
+    margin-right: 20px;
+}
+
+.list-item span{
+    font-weight: 600;
+}
+
+.mode-type{
+    display: flex;
+    padding-top:30px;
+    border-top:1px solid white;
+    opacity: 8.0;
+}
+
+.black_mode{
+    width:30px;
+    height:30px;
+    background-color: black;
+    border-radius: 20%;
+    border:1px solid white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navy_mode{
+    width:30px;
+    height:30px;
+    background-color: rgb(38, 9, 139);
+    margin-left: 20px;
+    border-radius: 20%;
+    border:1px solid white;
+    cursor: pointer;
+}
+
+.white_mode{
+    width:30px;
+    height:30px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-radius: 20%;
+    border:1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .container.navy,
+    .container.white,
+    .container.dark{
+        width: 70px;
+        min-height: 100%;
+    }
+
+.logo span{
+    display: none;
+}
+
+.list-item i{
+    margin:auto;
+}
+
+.list-item span{
+    display: none;
+}
+
+.mode-type{
+    display: flex;
+    flex-direction: column;
+    padding-top:5px;
+}
+.navy_mode{
+    margin-top:5px;
+}
+.white_mode{
+    margin-top: 5px;
+}
+}
+
+
+
+
